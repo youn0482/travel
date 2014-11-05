@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Travel Form</title>
+	<link rel="stylesheet" href="css/form.css" />
+    <link href='http://fonts.googleapis.com/css?family=Alex+Brush|Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="masthead">
+			<h1>Hotel-O-City</h1>
+            <h2>Finding you the best couples getaway!</h2>
+		</header>
+		<section class="main">
+			<p>From white sandy beaches to romantic candle-light dinners, the perfect vaction is just one click away.</p>
+			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
+				
+				<div class="formBox">
+					<label for="departure">Departure:</label>
+					<input type="text" name="departure" id="departure" placeholder="Leaving From..." list="cities"/>
+				</div>
+				<div class="formBox">
+					<label for="destination">Destination:</label>
+					<input type="text" name="destination" id="destination" placeholder="Arriving At..." list="cities"/>
+				</div>
+                <datalist id="cities">
+                    <option value="Ottawa, ON"></option>
+                    <option value="Toronto, ON"></option>
+                    <option value="Montreal, QC"></option>
+                    <option value="New York City, NY"></option>
+                    <option value="Cancun, MX"></option>
+                    <option value="San Fransisco, CA"></option>
+                    <option value="Los Angeles, CA"></option>
+                    <option value="St. John's, NL"></option>
+                    <option value="Miama, FL"></option>
+                    <option value="London, EN"></option>
+                    <option value="Boston, MA"></option>
+                    <option value="Las Vegas, NV"></option>
+                </datalist>
+				
+				<div class="formBox">
+					<label for="departure_dt">Day Leaving:</label>
+					<input type="date" name="departure_dt" id="departure_dt" placeholder="" />
+				</div>
+				<div class="formBox">
+					<label for="return_dt">Day Returning:</label>
+					<input type="date" name="return_dt" id="return_dt" placeholder="" />
+				</div>
+				
+				<div class="col">
+					<label for="num_adults"># Adults:</label>
+					<input type="number" name="num_adults" id="num_adults" min="1" max="10" step="1" />
+					<!-- OR 
+					<select name="num_adults" id="num_adults">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+					-->
+				</div>
+				<div class="col">
+					<label for="price" title="Max. price per person">Max Price: $</label>
+                    <output name="amount" for="price">1000</output>
+					<input type="range" name="price" id="price" min="100" max="3000" value="1000" oninput= "amount.value=price.value" step="100"/>
+				</div>
+				
+				<div class="col buttons">
+					<input type="reset" name="btnReset" id="btnReset" value="Reset" />
+					<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
+				</div>
+			</form>
+            </section>
+		</div>
+		<footer class="foot">
+            <!--<img src="img/heartsfooter.jpg" alt="hearts banner"/>-->
+			<p>&copy; 2014 Chicken Stuff Inc.</p>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+ /*******************************************
+				Defaults
+
+Remember to use something like type-scale.com 
+to get your font sizes
+FFA0BF FFF9B9 B23D63 6BB7CC 67A2B2
+*******************************************/
+*{
+	padding:0;
+	margin: 0;
+    box-sizing:border-box;
+}
+.wrapper{
+    background-image: -webkit-linear-gradient(top, #FFA0BF 0%, #B23D63      75%);
+    background-image: -moz-linear-gradient(top, #FFA0BF 0%, #B23D63 70%);
+    margin: 0 auto;
+    max-width: 700px;
+    height: 800px;
+    overflow:hidden;
+}
+h1{
+    font-family:"Alex Brush", cursive;
+    font-size: 2.827em;
+    padding: 1rem;
+    text-align: center;
+}
+h2{
+    font-family:"Alex Brush", cursive;
+    padding: 0.5rem;
+    text-size: 1.414em;
+    text-align: center;
+}
+body{  
+ margin: 0 auto;   
+}
+p{
+ text-align: center;
+    margin-left:1rem;
+}
+p, input, label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; 
+}
+
+input{
+    background-color: #FFF; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+/*******************************************
+				Layout
+*******************************************/
+.wrapper{
+	align-content: center;
+}
+.masthead{
+	
+}
+.main{
+	width: 90%;
+    align-content: center;
+}
+/*.foot img{
+    width:100%;
+    border-image-repeat: repeat;
+    max-height: 200px;
+}
+*/
+form{
+    overflow: hidden;
+    border: 0.125rem solid #6A0117;
+    border-top-left-radius: 0.75rem; 
+    border-top-right-radius: 0.75rem;
+    margin: 0 auto;  
+    background-color: #67A2B2;
+    
+}
+.foot{
+    position: absolute;
+    bottom: 0px;
+    background-color: #B23D63;
+    width:100%;
+}
+
+/*******************************************
+				Form Styles
+*******************************************/
+
+.formBox, .col{
+	padding: 0.4rem;
+    background-color: #6BB7CC;
+    border: solid 2px #67A2B2;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    display: block;
+    
+}
+.buttons{
+	float:left;
+    padding-top: 0.5rem;
+}
+
+label{
+	
+}
+input[type=range]{
+    width: 100%;
+    height:1.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+	width: 100%;
+    line-height: 1.5rem
+    
+}
+input[type=submit],
+input[type=reset]{
+	line-height:1.5rem;
+
+        background-image: -webkit-linear-gradient(top, #FFA0BF 0%, #B23D63      100%);
+    background-image: -moz-linear-gradient(top, #FFA0BF 0%, #B23D63 70%);
+}
+
+
+
+
+/*******************************************
+				Image Styles
+*******************************************/
+#departure, #destination {
+    
+    background-image: url(../img/plane15.svg);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    text-indent: 1.9rem;
+    background-position: 5px;
+   
+}
+
+#departure_dt, #return_dt {
+    
+    background-image: url(../img/calendar.svg);
+    background-size: 17px;
+    background-repeat: no-repeat;
+    text-indent: 0.95rem;
+    background-position:5px;
+    
+}
+#num_adults{
+    background-image: url(../img/people.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    text-indent: 2rem;
+    background-position:7px;
+}
+#price{
+    
+    background-image: url(../img/dollar.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    text-indent: 4rem;
+    background-position:50%;
+    
+}
+/******************************************
+
+        MEDIA QUERIES
+
+********************************************/
+@media all and (min-width: 500px){
+    
+    .formBox, .col{
+        
+        float:left;
+        width:48%;
+        margin: 1%;
+    }
+    
+    .buttons{
+        width:98%;  
+        margin: 1%;
+    }
+}
+
+@media all and (min-width: 1024px){
+    
+    .formBox, .col{
+        
+        float:left;
+        width:50%;
+    
+    }
+    
+    .buttons{
+        width:100%;  
+
+    }
+    
+    h1{
+     font-size: 3.998em;   
+    }
+}
