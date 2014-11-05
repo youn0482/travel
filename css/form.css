@@ -15,7 +15,7 @@ FFA0BF FFF9B9 B23D63 6BB7CC 67A2B2
     background-image: -moz-linear-gradient(top, #FFA0BF 0%, #B23D63 70%);
     margin: 0 auto;
     max-width: 700px;
-    height: 800px;
+
     overflow:hidden;
 }
 h1{
@@ -74,13 +74,14 @@ form{
     border-top-right-radius: 0.75rem;
     margin: 0 auto;  
     background-color: #67A2B2;
+    height: 700px;
     
 }
 .foot{
-    position: absolute;
     bottom: 0px;
     background-color: #B23D63;
     width:100%;
+    max-width: 700px;
 }
 
 /*******************************************
@@ -128,6 +129,12 @@ input[type=reset]{
     background-image: -moz-linear-gradient(top, #FFA0BF 0%, #B23D63 70%);
 }
 
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 100%; 
+     
+}
 
 
 
@@ -169,6 +176,13 @@ input[type=reset]{
     background-position:50%;
     
 }
+
+img{
+    width: 100%;
+    border: solid 3px #6BB7CC;
+    height: 0 auto;
+    
+}
 /******************************************
 
         MEDIA QUERIES
@@ -194,12 +208,13 @@ input[type=reset]{
     .formBox, .col{
         
         float:left;
-        width:50%;
-    
+        width:48%;
+        margin: 1%;
     }
     
     .buttons{
-        width:100%;  
+        width:98%;  
+        margin: 1%; 
 
     }
     
