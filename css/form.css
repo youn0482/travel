@@ -79,9 +79,11 @@ form{
 }
 .foot{
     bottom: 0px;
-    background-color: #B23D63;
+    background-image: -webkit-linear-gradient(top, #B23D63 0%, #6A0117      75%);
+    background-image: -moz-linear-gradient(top, #B23D63 0%, #6A0117 70%);
     width:100%;
     max-width: 700px;
+
 }
 
 /*******************************************
