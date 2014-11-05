@@ -60,6 +60,7 @@ input{
 }
 .main{
 	width: 80%;
+    height: 700px
 }
 /*.foot img{
     width:100%;
@@ -74,13 +75,12 @@ form{
     border-top-right-radius: 0.75rem;
     margin: 0 auto;  
     background-color: #67A2B2;
-    height: 865px;
     
 }
 .foot{
     bottom: 0px;
     background-color: #B23D63;
-    width:auto;
+    width:100%;
     max-width: 700px;
 }
 
@@ -130,8 +130,9 @@ input[type=reset]{
 }
 
 #slideshow { 
-    margin: 50px auto; 
-    position: relative; 
+    display: none;
+
+    margin: 50px auto;  
     width: 100%; 
      
 }
@@ -180,7 +181,7 @@ input[type=reset]{
 img{
     width: 100%;
     height: 350px;
-    border: solid 3px #6BB7CC;
+    
     
 }
 /******************************************
@@ -204,6 +205,13 @@ img{
      h1{
      font-size: 3.998em;   
     }
+    .main{
+     height: 680px;   
+    }
+    #slideshow{
+     display:block;   
+    }
+    
 }
 
 @media all and (min-width: 1024px){
@@ -223,5 +231,11 @@ img{
     
     h1{
      font-size: 3.998em;   
+    }
+    .main{
+        
+    }
+    #slideshow{
+     display:block;   
     }
 }
