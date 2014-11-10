@@ -7,7 +7,7 @@ function init(){
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(5000)
+    .fadeOut(2000)
     .next()
     .fadeIn(2000)
     .end()

@@ -31,7 +31,9 @@ h2{
     text-align: center;
 }
 body{  
- margin: 0 auto;   
+    margin: 0 auto; 
+    /*background-image: url(../img/heartsfooter.jpg) left bottom;
+    background-repeat: repeat-x;*/
 }
 p{
  text-align: center;
@@ -48,26 +50,23 @@ input{
     -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
     box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 }
-
+img{
+    
+    border: 0.125rem solid #6A0117;
+    border-top: none;
+}
 /*******************************************
 				Layout
 *******************************************/
 .wrapper{
-	align-content: center;
 }
 .masthead{
 	
 }
 .main{
 	width: 80%;
-    height: 700px
 }
-/*.foot img{
-    width:100%;
-    border-image-repeat: repeat;
-    max-height: 200px;
-}
-*/
+
 form{
     overflow: hidden;
     border: 0.125rem solid #6A0117;
@@ -78,7 +77,6 @@ form{
     
 }
 .foot{
-    bottom: 0px;
     background-image: -webkit-linear-gradient(top, #B23D63 0%, #6A0117      75%);
     background-image: -moz-linear-gradient(top, #B23D63 0%, #6A0117 70%);
     width:100%;
@@ -126,17 +124,24 @@ input[type=date]{
 input[type=submit],
 input[type=reset]{
 	line-height:1.5rem;
-
+    padding: 0.2rem;
+    font-size: 0.7rem;
         background-image: -webkit-linear-gradient(top, #FFA0BF 0%, #B23D63      100%);
     background-image: -moz-linear-gradient(top, #FFA0BF 0%, #B23D63 70%);
 }
 
 #slideshow { 
-    display: none;
-
-    margin: 50px auto;  
+    /**display: none; **/
+    position: relative;
+    margin: auto;  
     width: 100%; 
-     
+    clear:both;
+}
+
+#slideshow > div{
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 
@@ -181,8 +186,8 @@ input[type=reset]{
 }
 
 img{
-    width: 100%;
-    height: 350px;
+    max-width: 100%;
+    height: auto;
     
     
 }
@@ -208,7 +213,7 @@ img{
      font-size: 3.998em;   
     }
     .main{
-     height: 680px;   
+   
     }
     #slideshow{
      display:block;   
