@@ -14,7 +14,7 @@ FFA0BF FFF9B9 B23D63 6BB7CC 67A2B2
     background-image: -webkit-linear-gradient(top, #FFA0BF 0%, #B23D63      75%);
     background-image: -moz-linear-gradient(top, #FFA0BF 0%, #B23D63 70%);
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 780px;
 
     overflow:hidden;
 }
@@ -36,8 +36,10 @@ body{
     background-repeat: repeat-x;*/
 }
 p{
- text-align: center;
+    text-align: center;
     margin-left:1rem;
+    padding: 0.5rem;
+    
 }
 p, input, label{
     font-family: 'Roboto', sans-serif;
@@ -58,10 +60,8 @@ img{
 /*******************************************
 				Layout
 *******************************************/
-.wrapper{
-}
-.masthead{
-	
+.buttons{
+    width:100%;   
 }
 .main{
 	width: 80%;
@@ -80,7 +80,7 @@ form{
     background-image: -webkit-linear-gradient(top, #B23D63 0%, #6A0117      75%);
     background-image: -moz-linear-gradient(top, #B23D63 0%, #6A0117 70%);
     width:100%;
-    max-width: 700px;
+    max-width: 780px;
 
 }
 
@@ -143,7 +143,14 @@ input[type=reset]{
     top:0;
     left:0;
 }
-
+    #btnReset{
+        width: 49%;
+        font-size: 1rem;
+    }
+    #btnSubmit{
+        width: 49%;
+        font-size: 1rem;        
+    }
 
 
 /*******************************************
@@ -221,21 +228,28 @@ img{
     
 }
 
-@media all and (min-width: 1024px){
+@media all and (min-width: 780px){
     
-    .formBox, .col{
+    .formBox{
         
         float:left;
-        width:48%;
+        width:23%;
         margin: 1%;
     }
-    
-    .buttons{
-        width:98%;  
-        margin: 1%; 
 
+    .main
+    {
+     width: 95%;   
+    }
+    .buttons{
+        width:50%;  
+        margin-left: 25.5%; 
+        
     }
     
+    input{
+     font-size:0.7rem;   
+    }
     h1{
      font-size: 3.998em;   
     }
